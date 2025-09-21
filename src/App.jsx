@@ -11,9 +11,11 @@ function App() {
 
   return (
     <>
-      <Suspense fallback = {<p>jhanker vai loading...</p>}>
+     <div className="w-10/12 mx-auto">
+       <Suspense fallback = {<p>jhanker vai loading...</p>}>
         <Countries countriesPromise = {countriesPromise} />
       </Suspense>
+     </div>
       
     </>
   )
